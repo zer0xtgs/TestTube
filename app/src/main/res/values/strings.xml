@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestTube</string>
+    <string name="channelname">channelName</string>
+    <string name="textviewtest">textViewTest</string>
+    <string name="video_row">video_row</string>
+    <string name="detailitempic">detailItemPic</string>
+</resources>
