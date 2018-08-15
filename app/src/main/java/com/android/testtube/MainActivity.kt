@@ -2,6 +2,7 @@ package com.android.testtube
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.activity_main.*
@@ -14,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//         recyclerView_main.setBackgroundColor(Color.BLUE)
         recyclerView_main.layoutManager = LinearLayoutManager(this)
+        recyclerView_main.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL ))
 
 
         fetchData()

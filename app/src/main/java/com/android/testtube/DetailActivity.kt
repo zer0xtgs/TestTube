@@ -2,6 +2,7 @@ package com.android.testtube
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.detail_list.*
@@ -16,6 +17,7 @@ class DetailListActivity: AppCompatActivity() {
 
 
         detailRecyclerView.layoutManager = LinearLayoutManager(this)
+        detailRecyclerView.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
 
 
         val toolbar = intent.getStringExtra("ACTION_BAR")
